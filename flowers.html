@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter II - The Enchanted Garden</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="flowers.css">
+
+</head>
+
+<body>
+
+<div class="sparkles"></div>
+<div class="petals"></div>
+
+<div class="container">
+
+<h1>🌙 Chapter II</h1>
+
+<h2>The Enchanted Garden</h2>
+
+<p id="welcome"></p>
+
+<p class="story">
+
+Every enchanted story begins with a flower.
+
+The garden is waiting for you...
+
+Choose the flower that speaks to your heart.
+
+</p>
+
+<div class="flowerGrid">
+
+<div class="flower" onclick="pickFlower('sunflower')">
+🌻
+<span>Sunflower</span>
+</div>
+
+<div class="flower" onclick="pickFlower('tulip')">
+🌷
+<span>Tulip</span>
+</div>
+
+<div class="flower" onclick="pickFlower('rose')">
+🌹
+<span>Rose</span>
+</div>
+
+<div class="flower" onclick="pickFlower('lily')">
+🤍
+<span>White Lily</span>
+</div>
+
+<div class="flower" onclick="pickFlower('daisy')">
+🌼
+<span>Daisy</span>
+</div>
+
+<div class="flower" onclick="pickFlower('cherry')">
+🌸
+<span>Cherry Blossom</span>
+</div>
+
+</div>
+
+<p id="message"></p>
+
+<button
+id="nextBtn"
+onclick="nextChapter()">
+
+Continue the Story 📖
+
+</button>
+
+</div>
+
+<script src="flowers.js"></script>
+
+</body>
+
+</html>
