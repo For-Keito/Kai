@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter III - Restoring the Library's Magic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="games.css">
+
+</head>
+
+<body>
+
+<div class="sparkles"></div>
+<div class="books"></div>
+<div class="candles"></div>
+
+<div class="container">
+
+<h1>📚 Chapter III</h1>
+
+<h2>Restoring the Library's Magic</h2>
+
+<p id="welcome"></p>
+
+<p class="story">
+
+The library has almost remembered its magic.
+
+Complete the three enchanted challenges to unlock the final chapter.
+
+</p>
+
+<div class="progress">
+
+<div id="progressFill" class="progressFill"></div>
+
+</div>
+
+<div class="challenge">
+
+<h3>📖 Challenge One</h3>
+
+<p>Which flower best represents kindness?</p>
+
+<button onclick="answer(1,'lily')">🤍 White Lily</button>
+
+<button onclick="answer(1,'rose')">🌹 Rose</button>
+
+<button onclick="answer(1,'sunflower')">🌻 Sunflower</button>
+
+</div>
+
+<div class="challenge">
+
+<h3>🕯 Challenge Two</h3>
+
+<p>What lights every fairy tale?</p>
+
+<button onclick="answer(2,'magic')">✨ Magic</button>
+
+<button onclick="answer(2,'money')">💰 Money</button>
+
+<button onclick="answer(2,'luck')">🍀 Luck</button>
+
+</div>
+
+<div class="challenge">
+
+<h3>🌹 Challenge Three</h3>
+
+<p>What is stronger than beautiful words?</p>
+
+<button onclick="answer(3,'actions')">❤️ Actions</button>
+
+<button onclick="answer(3,'gifts')">🎁 Gifts</button>
+
+<button onclick="answer(3,'promises')">💌 Promises</button>
+
+</div>
+
+<p id="result"></p>
+
+<button id="nextBtn" onclick="nextChapter()">
+
+Unlock The Letter 💌
+
+</button>
+
+</div>
+
+<script src="games.js"></script>
+
+</body>
+
+</html>
