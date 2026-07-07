@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(rgba(30,20,10,.55),rgba(30,20,10,.65)),
+url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
+}
+
+/* Golden magical glow */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(circle at 20% 20%,rgba(255,215,120,.20),transparent 35%),
+radial-gradient(circle at 80% 30%,rgba(255,230,150,.15),transparent 35%),
+radial-gradient(circle at 50% 90%,rgba(255,200,120,.18),transparent 40%);
+
+pointer-events:none;
+
+}
+
+/* Floating Sparkles */
+
+.sparkles::before{
+
+content:"✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨";
+
+position:fixed;
+
+top:-20%;
+
+left:-10%;
+
+width:120%;
+
+font-size:28px;
+
+opacity:.30;
+
+animation:sparkles 20s linear infinite;
+
+}
+
+/* Floating Roses */
+
+.roses::before{
+
+content:"🌹 🌹 🌹 🌹 🤍 🌹 🌹";
+
+position:fixed;
+
+top:-20%;
+
+left:-10%;
+
+width:120%;
+
+font-size:34px;
+
+opacity:.35;
+
+animation:roses 28s linear infinite;
+
+}
+
+/* Floating Candles */
+
+.candles::before{
+
+content:"🕯 🕯 🕯 🕯 🕯 🕯";
+
+position:fixed;
+
+top:-20%;
+
+left:-10%;
+
+width:120%;
+
+font-size:28px;
+
+opacity:.25;
+
+animation:candles 35s linear infinite;
+
+}
+
+/* Storybook */
+
+.container{
+
+width:92%;
+max-width:760px;
+
+padding:20px;
+
+}
+
+.book{
+
+background:rgba(255,248,238,.92);
+
+backdrop-filter:blur(10px);
+
+border-radius:30px;
+
+padding:45px;
+
+text-align:center;
+
+border:2px solid rgba(255,220,120,.35);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45),
+0 0 45px rgba(255,215,0,.20);
+
+animation:fadeUp 1.5s;
+
+}
+
+.rose{
+
+font-size:70px;
+
+margin-bottom:15px;
+
+animation:floatRose 3s ease-in-out infinite;
+
+}
+
+h1{
+
+font-family:'Cinzel',serif;
+
+font-size:42px;
+
+color:#d4af37;
+
+margin-bottom:15px;
+
+text-shadow:
+0 0 10px rgba(255,215,0,.6);
+
+}
+
+.subtitle{
+
+font-size:20px;
+
+color:#7b4d28;
+
+margin-bottom:25px;
+
+line-height:1.8;
+
+}
+
+p{
+
+color:#5f4632;
+
+font-size:18px;
+
+line-height:1.9;
+
+margin-bottom:20px;
+
+}
+
+.nameBox{
+
+margin-top:25px;
+
+}
+
+input{
+
+width:80%;
+
+padding:15px;
+
+font-size:18px;
+
+border-radius:40px;
+
+border:2px solid #d4af37;
+
+outline:none;
+
+margin-bottom:20px;
+
+}
+
+button{
+
+padding:15px 35px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#b8860b,#e6c35c);
+
+color:white;
+
+transition:.35s;
+
+box-shadow:0 0 20px rgba(255,215,0,.4);
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+0 0 20px gold,
+0 0 40px gold;
+
+}
+
+/* Animations */
+
+@keyframes sparkles{
+
+0%{
+transform:translateY(-150px);
+}
+
+100%{
+transform:translateY(120vh);
+}
+
+}
+
+@keyframes roses{
+
+0%{
+transform:translateY(-180px) rotate(0deg);
+}
+
+100%{
+transform:translateY(120vh) rotate(360deg);
+}
+
+}
+
+@keyframes candles{
+
+0%{
+transform:translateY(-180px);
+}
+
+100%{
+transform:translateY(120vh);
+}
+
+}
+
+@keyframes floatRose{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.book{
+
+padding:28px;
+
+}
+
+h1{
+
+font-size:32px;
+
+}
+
+.subtitle{
+
+font-size:17px;
+
+}
+
+p{
+
+font-size:16px;
+
+}
+
+input{
+
+width:100%;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
